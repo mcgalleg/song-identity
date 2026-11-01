@@ -41,6 +41,7 @@ say "Building 'Song Identity.app'"
 bash "$ROOT/scripts/make_mac_app.sh"
 
 say "Done!"
+open "/Applications/Song Identity.app" 2>/dev/null || open "$HOME/Applications/Song Identity.app" || true
 cat <<'EOF'
 Last step (once): route the Mac's sound to BlackHole as well as your speakers
   1. Open "Audio MIDI Setup" (Applications ▸ Utilities).
@@ -50,7 +51,7 @@ Last step (once): route the Mac's sound to BlackHole as well as your speakers
   4. System Settings ▸ Sound ▸ Output ▸ choose "Multi-Output Device".
   If BlackHole doesn't appear, restart the Mac.
 
-Then open "Song Identity" from your Applications folder. A ♪ appears in the
-menu bar; choose "Start Listening". Allow microphone access when macOS asks
+Song Identity is now in your Applications folder and is starting up: look
+for ♪ in the menu bar (top right) and choose "Start Listening". Allow microphone access when macOS asks
 (that is how macOS labels access to BlackHole).
 EOF

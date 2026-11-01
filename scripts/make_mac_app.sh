@@ -1,8 +1,15 @@
 #!/bin/bash
-# Wraps the menu bar app in a double-clickable "Song Identity.app" in ~/Applications.
+# Wraps the menu bar app in a double-clickable "Song Identity.app" in /Applications
+# (or ~/Applications if /Applications is not writable).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-APP="$HOME/Applications/Song Identity.app"
+if [[ -w /Applications ]]; then
+  APP="/Applications/Song Identity.app"
+  rm -rf "$HOME/Applications/Song Identity.app"  # remove copy from older installs
+else
+  mkdir -p "$HOME/Applications"
+  APP="$HOME/Applications/Song Identity.app"
+fi
 
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"

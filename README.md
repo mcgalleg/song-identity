@@ -31,7 +31,7 @@ performance of the same piece will not match – teach it that recording too
    bash scripts/install_mac.sh
    ```
    This installs Python, the free **BlackHole** audio driver, ffmpeg and yt-dlp,
-   and creates **~/Applications/Song Identity.app**.
+   and creates **Song Identity** in your Applications folder.
 3. Let the Mac's sound reach BlackHole *and* your speakers:
    - Open **Audio MIDI Setup** (Applications ▸ Utilities).
    - **+** (bottom left) ▸ **Create Multi-Output Device**.
@@ -39,7 +39,8 @@ performance of the same piece will not match – teach it that recording too
      tick *Drift Correction* for BlackHole).
    - **System Settings ▸ Sound ▸ Output** ▸ choose **Multi-Output Device**.
    - (If BlackHole isn't listed, restart the Mac.)
-4. Open **Song Identity** from ~/Applications. A ♪ appears in the menu bar.
+4. Open **Song Identity** from Applications (or Spotlight). It has no window or
+   Dock icon – a ♪ appears in the menu bar (top right).
    Choose **Start Listening** and allow microphone access when asked (macOS
    labels BlackHole access as "microphone").
 
