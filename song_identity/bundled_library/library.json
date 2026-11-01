@@ -1,0 +1,62 @@
+{
+  "1": {
+    "seconds": 159.9,
+    "sessions": 1,
+    "hashes": 51261,
+    "updated": "2026-11-01 16:04:55"
+  },
+  "2": {
+    "seconds": 77.6,
+    "sessions": 1,
+    "hashes": 65909,
+    "updated": "2026-11-01 16:04:59"
+  },
+  "3": {
+    "seconds": 284.7,
+    "sessions": 1,
+    "hashes": 191185,
+    "updated": "2026-11-01 16:05:05"
+  },
+  "4": {
+    "seconds": 705.6,
+    "sessions": 1,
+    "hashes": 412568,
+    "updated": "2026-11-01 16:05:17"
+  },
+  "5": {
+    "seconds": 543.0,
+    "sessions": 1,
+    "hashes": 429210,
+    "updated": "2026-11-01 16:10:01"
+  },
+  "6": {
+    "seconds": 245.6,
+    "sessions": 1,
+    "hashes": 122648,
+    "updated": "2026-11-01 16:10:07"
+  },
+  "7": {
+    "seconds": 201.7,
+    "sessions": 1,
+    "hashes": 72880,
+    "updated": "2026-11-01 16:10:13"
+  },
+  "8": {
+    "seconds": 206.8,
+    "sessions": 1,
+    "hashes": 145044,
+    "updated": "2026-11-01 16:10:20"
+  },
+  "9": {
+    "seconds": 304.2,
+    "sessions": 1,
+    "hashes": 223029,
+    "updated": "2026-11-01 16:10:27"
+  },
+  "10": {
+    "seconds": 406.0,
+    "sessions": 1,
+    "hashes": 219925,
+    "updated": "2026-11-01 16:10:36"
+  }
+}

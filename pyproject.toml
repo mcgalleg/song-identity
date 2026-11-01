@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "song-identity"
+version = "1.0.0"
+description = "Shazam-style recogniser for the class listening playlist"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "sounddevice>=0.4.6"]
+
+[project.optional-dependencies]
+mac = ["rumps>=0.4.0"]
+dev = ["pytest"]
+
+[project.scripts]
+song-identity = "song_identity.cli:main"
+
+[tool.setuptools]
+packages = ["song_identity"]
+
+[tool.setuptools.package-data]
+song_identity = ["bundled_library/*.json", "bundled_library/fingerprints/*.npz"]
